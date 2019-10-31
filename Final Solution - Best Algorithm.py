@@ -41,8 +41,8 @@ def target_country(data, mean):
 # In[24]:
 
 
-full_set = pd.read_csv("/users/ugrad/dabekk/Downloads/Kaggle - Salary Predictions/tcd ml 2019-20 income prediction training (with labels).csv")
-test_set = pd.read_csv("/users/ugrad/dabekk/Downloads/Kaggle - Salary Predictions/tcd ml 2019-20 income prediction test (without labels).csv")
+full_set = pd.read_csv("tcd ml 2019-20 income prediction training (with labels).csv")
+test_set = pd.read_csv("tcd ml 2019-20 income prediction test (without labels).csv")
 
 medianCountry = full_set.groupby('Country')['Income in EUR'].median()
 medianProf = full_set.groupby('Profession')['Income in EUR'].median()
